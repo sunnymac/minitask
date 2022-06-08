@@ -14,49 +14,78 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
      
       home: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          title: Text("ZOMATO"),
+        ),
         body: Container(
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Container(
-                    height: 150,
-                    width: 150,
-                    color: Colors.red,
-                  ),
-                  Column(
-                    children: [
-                      Text("first line"),
-                       Text("second line"),
-                       ElevatedButton(onPressed: (){}, child: Text("Add to Cart"))
-                    ],
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
-
-               Row(
-                children: [
-                  Container(
-                    height: 150,
-                    width: 150,
-                    color: Colors.red,
-                  ),
-                  Column(
-                    children: [
-                      Text("first line"),
-                       Text("second line"),
-                       ElevatedButton(onPressed: (){}, child: Text("Add to Cart"))
-                    ],
-                  )
-                ],
-              ),
-             
-
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      height: 150,
+                      width: 150,
+                      // color: Colors.red,
+                      child: Image.asset("assets/images/pizza.png"),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      children: [
+                        Text("Neapolitan Pizza"),
+                        SizedBox(
+                          height: 10,
+                        ),
+                         Text("\$5"),
+                          SizedBox(
+                          height: 30,
+                        ),
+                         ElevatedButton(onPressed: (){
+                           print("Neapolitan Pizza Clicked");
+                         }, child: Text("Add to Cart"))
+                      ],
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+          
+                 Row(
+                  children: [
+                    Container(
+                      height: 150,
+                      width: 150,
+                      // color: Colors.red,
+                      child: Image.asset("assets/images/pizza2.png"),
+                    ),
+                     SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      children: [
+                        Text("Greek Pizza"),
+                         SizedBox(
+                          height: 10,
+                        ),
+                         Text("\$10"),
+                          SizedBox(
+                          height: 30,
+                        ),
+                         ElevatedButton(onPressed: (){
+                            print("Greek Pizza Clicked");
+                         }, child: Text("Add to Cart"))
+                      ],
+                    )
+                  ],
+                ),
+               
+          
+              ],
+            ),
           ),
         ),
       )
