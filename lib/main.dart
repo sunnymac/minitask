@@ -36,11 +36,23 @@ class MyApp extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Neapolitan Pizza"),
+                        Text("Neapolitan Pizza",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.deepOrange,
+                          fontFamily: 'pacifico'
+                        ),
+                        ),
                         SizedBox(
                           height: 10,
                         ),
-                         Text("\$5"),
+                         Text("\$5", style:  TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.black,
+                          fontFamily: 'pacifico'
+                        ),),
                           SizedBox(
                           height: 30,
                         ),
@@ -74,11 +86,21 @@ class MyApp extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Greek Pizza"),
+                        Text("Greek Pizza", style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.deepOrange,
+                          fontFamily: 'pacifico'
+                        ),),
                          SizedBox(
                           height: 10,
                         ),
-                         Text("\$10"),
+                         Text("\$10", style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.black,
+                          fontFamily: 'pacifico'
+                        ),),
                           SizedBox(
                           height: 30,
                         ),
