@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
                       width: 20,
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Neapolitan Pizza"),
                         SizedBox(
@@ -51,9 +52,14 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 16,
+                  height: 8,
                 ),
-          
+                Divider(
+                  color: Colors.black,
+                ),
+          SizedBox(
+                  height: 8,
+                ),
                  Row(
                   children: [
                     Container(
@@ -66,6 +72,7 @@ class MyApp extends StatelessWidget {
                       width: 20,
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Greek Pizza"),
                          SizedBox(
