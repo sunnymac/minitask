@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
                          Text("\$5", style:  TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w300,
-                          color: Colors.black,
+                          color: Colors.grey,
                           fontFamily: 'pacifico'
                         ),),
                           SizedBox(
@@ -98,7 +98,7 @@ class MyApp extends StatelessWidget {
                          Text("\$10", style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w300,
-                          color: Colors.black,
+                          color: Colors.grey,
                           fontFamily: 'pacifico'
                         ),),
                           SizedBox(
